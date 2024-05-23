@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REASERCHERY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1>REASERCHERY</h1>
+            <h2>Academic Book Search</h2>
+            <div class="header-description">
+                This is an academic book search tool. Enter a keyword or phrase to find relevant information within the books.
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search for a word or phrase">
+                <button id="searchButton">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <aside id="sidebar">
+            <button id="bookListButton">Available Books</button>
+            <ul id="bookList" class="hidden"></ul>
+
+            <h3>Content of the Book</h3>
+            <ul id="chaptersList" class="hidden"></ul>
+        </aside>
+
+        <main id="mainContent">
+            <ul id="results"></ul>
+        </main>
+    </div>
+
+    <footer>
+        © 2024 Reaserchery. All rights reserved.
+    </footer>
+
+    <script src="search.js"></script>
+</body>
+</html>
